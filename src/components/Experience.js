@@ -18,8 +18,8 @@ const Experience = () => {
       <figure class="text-center">
         <blockquote class="blockquote">
           <p className="text-muted">
-            - from a monolithic ERP developer to a{" "}
-            <cite title="super cool">super cool</cite> Cloud Architect!
+            -- from a (monolithic) ERP software developer to a{" "}
+            <cite title="AWS, GCP">super cool</cite> Cloud Architect!
           </p>
         </blockquote>
       </figure>
@@ -62,7 +62,7 @@ const Experience = () => {
                 </a>
               )}
               <figcaption className="blockquote-footer fst-italic mt-3">
-                What does that mean?(!): {element.annotations}
+                {element.annotations}
               </figcaption>
             </VerticalTimelineElement>
           );

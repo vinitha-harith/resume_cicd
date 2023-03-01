@@ -13,7 +13,8 @@ import Header from "./components/Header";
 import Experience from "./components/Experience";
 import Personal from "./components/Personal";
 
-const API_URL = process.env.REACT_APP_API_URL;
+// const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = "https://res-gw-4tszy005.ew.gateway.dev/index";
 
 const App = () => {
   const [v_count, setVCount] = useState("");

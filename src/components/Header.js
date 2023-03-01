@@ -55,7 +55,7 @@ export default function Header(props) {
                     </div>
                   </div>
                 </div>
-                <div>
+                <div className="sm:items-stretch sm:justify-start">
                   <NavLink to={"/personal"}>
                     <Logo
                       alt="VS"

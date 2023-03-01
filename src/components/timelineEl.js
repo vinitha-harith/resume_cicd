@@ -10,7 +10,7 @@ let timelineElements = [
     icon: "work",
     buttonLink: "https://www.credit-suisse.com",
     skills: "Systems Architecture, Python",
-    annotations: "xxx",
+    annotations: "Finally Big data architecture and Cloud!",
   },
   {
     id: 2,
@@ -24,7 +24,8 @@ let timelineElements = [
     buttonLink: "https://www.bearingpoint.com",
     skills:
       "Systems Architecture, Data modelling, Python, PL/SQL, Oracle, MSSQL, SAP Analytics Cloud, R",
-    annotations: "xxx",
+    annotations:
+      "Medley of topics and technologies, ranging from data modelling, building BI dashboards to enabling automation with custom-built tools ",
   },
   {
     id: 3,
@@ -37,7 +38,8 @@ let timelineElements = [
     icon: "work",
     buttonLink: "https://www.credit-suisse.com",
     skills: "PL/SQL, Oracle",
-    annotations: "xxx",
+    annotations:
+      "Onto Oracle DW, automation of source code repository migrations using VBA and shell scripting",
   },
   {
     id: 4,
@@ -50,20 +52,22 @@ let timelineElements = [
     icon: "work",
     buttonLink: "https://www.credit-suisse.com",
     skills: "PeopleSoft, PL/SQL, Oracle",
-    annotations: "xxx",
+    annotations:
+      "Some more technical implementations in the ERP space. With this, finally done working with ERPs!",
   },
   {
     id: 5,
     title: "ERP Senior Technical Consultant at HBK Investments, USA",
     location: "Zurich, Switzerland (Remote)",
     description:
-      "Designed and implemented an ERP/JavaScript based issue tracking system with advanced typeahead search functionalities, which also tracked projects, tasks, milestones, and enhancement requests related to applications including a custom workflow component. This helped enhance business user engagement through improved user experience.",
+      "Designed and implemented an ERP/JavaScript AJAX based issue tracking system with advanced typeahead search functionalities, which also tracked projects, tasks, milestones, and enhancement requests related to applications including a custom workflow component. This helped enhance business user engagement through improved user experience.",
     buttonText: "HBK Investments",
     date: "June 2007 — July 2008",
     icon: "work",
     buttonLink: "https://www.hbk.com",
     skills: "PeopleSoft, Javascript",
-    annotations: "xxx",
+    annotations:
+      "Came up with an innovative solution to the requirements given the limitations in the ERP functionalities offered out-of-the-box.",
   },
   {
     id: 6,
@@ -77,7 +81,8 @@ let timelineElements = [
     icon: "work",
     buttonLink: "https://www.cognizant.com",
     skills: "PeopleSoft, PL/SQL, Oracle",
-    annotations: "xxx",
+    annotations:
+      "Systems landscape transformation, migrations, process re-engineering should sound impressive enough :o)",
   },
   {
     id: 7,
@@ -90,7 +95,7 @@ let timelineElements = [
     icon: "work",
     buttonLink: "https://www.cognizant.com",
     skills: "PeopleSoft, Oracle",
-    annotations: "xxx",
+    annotations: "ERP technology was fairly cool back in the day!",
   },
 ];
 
