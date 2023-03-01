@@ -28,7 +28,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: webpack artifacts
-          path: public/
+          path: build/
   deploy:
     name: Deploy app to GCS
     needs: build
@@ -39,7 +39,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: webpack artifacts
-          path: public
+          path: build
       - name: Deploy to GCP
         uses: github/deploy-nodejs@v3
       
