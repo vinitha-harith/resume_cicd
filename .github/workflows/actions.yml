@@ -56,8 +56,8 @@ jobs:
         id: 'auth'
         uses: 'google-github-actions/auth@v1'
         with:
-          workload_identity_provider: 'projects/378336769925/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-          service_account: 'sa-workflow-identity@resume-ch.iam.gserviceaccount.com'
+          workload_identity_provider: '${{ secrets.WIF_PROVIDER }}' 
+          service_account: '${{ secrets.WIF_SERVICE_ACCOUNT }}'
           token_format: 'access_token'
           
       - id: 'upload-files'
