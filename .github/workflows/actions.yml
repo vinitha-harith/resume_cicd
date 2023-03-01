@@ -10,7 +10,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest]
+        os: [ubuntu-latest]
         node-version: [19.6]
     steps:
       - uses: actions/checkout@v3
@@ -29,3 +29,17 @@ jobs:
         with:
           name: webpack artifacts
           path: public/
+  deploy:
+    name: Deploy app to GCS
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: webpack artifacts
+          path: public
+      - name: Deploy to GCP
+        uses: github/deploy-nodejs@v3
+      
