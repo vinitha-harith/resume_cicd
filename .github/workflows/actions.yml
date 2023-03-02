@@ -45,6 +45,14 @@ jobs:
     steps:
       - name: Checkout 
         uses: actions/checkout@v3
+        
+      - name: Google Auth
+        id: auth
+        uses: 'google-github-actions/auth@v1'
+        with:
+          token_format: 'access_token'
+          workload_identity_provider: '${{ secrets.WIF_PROVIDER }}' # e.g. - projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
+          service_account: '${{ secrets.WIF_SERVICE_ACCOUNT }}' # e.g. - my-service-account@my-project.iam.gserviceaccount.com
       
       - name: Download build artifact
         id: download
@@ -56,14 +64,7 @@ jobs:
       - name: 'Echo download path'
         run: echo ${{steps.download.outputs.download-path}}  
         
-      - name: Google Auth
-        id: auth
-        uses: 'google-github-actions/auth@v1'
-        with:
-          token_format: 'access_token'
-          workload_identity_provider: '${{ secrets.WIF_PROVIDER }}' # e.g. - projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
-          service_account: '${{ secrets.WIF_SERVICE_ACCOUNT }}' # e.g. - my-service-account@my-project.iam.gserviceaccount.com
-          
+      
       - id: upload-files
         uses: 'google-github-actions/upload-cloud-storage@v1'
         with:
