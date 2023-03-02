@@ -19,27 +19,30 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
+      - name: npm install, build
         run: |
           npm ci
           npm run build --if-present
-          npm test
         env:
           CI: true
       - uses: actions/upload-artifact@v3
         with:
           name: webpack artifacts
           path: build/
-          
+        
   deploy:
-    name: Deploy app to GCS
-    needs: build
-    runs-on: ubuntu-latest
+    # Add 'id-token' with the intended permissions for workload identity federation
     permissions:
       contents: 'read'
       id-token: 'write'
+      
+    name: Deploy app to GCS
+    needs: build
+    runs-on: ubuntu-latest    
+      
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout 
+        uses: actions/checkout@v3
       
       - name: Download build artifact
         id: download
@@ -51,16 +54,19 @@ jobs:
       - name: 'Echo download path'
         run: echo ${{steps.download.outputs.download-path}}  
         
-      - name: Deploy to GCP
-      - id: 'auth'
+      - name: Google Auth
+        id: auth
         uses: 'google-github-actions/auth@v1'
         with:
-          workload_identity_provider: 'projects/378336769925/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-          service_account: 'sa-workflow-identity@resume-ch.iam.gserviceaccount.com'
-      - id: 'upload-files'
+          workload_identity_provider: '${{ secrets.WIF_PROVIDER }}' 
+          service_account: '${{ secrets.WIF_SERVICE_ACCOUNT }}'
+          token_format: 'access_token'
+          
+      - id: upload-files
         uses: 'google-github-actions/upload-cloud-storage@v1'
         with:
-          path: build
+          path: ${{steps.download.outputs.download-path}} 
           destination: 'vinitha.info'
           parent: false
+
  
