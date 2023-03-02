@@ -14,7 +14,9 @@ const Experience = () => {
 
   return (
     <div>
-      <h1 className="title">My journey so far... professionally speaking</h1>
+      <h1 className="title mt-2">
+        My journey so far... professionally speaking
+      </h1>
       <figure class="text-center">
         <blockquote class="blockquote">
           <p className="text-muted">

@@ -82,7 +82,7 @@ let timelineElements = [
     buttonLink: "https://www.cognizant.com",
     skills: "PeopleSoft, PL/SQL, Oracle",
     annotations:
-      "Systems landscape transformation, migrations, process re-engineering should sound impressive enough :o)",
+      "Systems landscape transformation, migrations, process re-engineering were great learning experiences",
   },
   {
     id: 7,

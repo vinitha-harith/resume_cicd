@@ -12,6 +12,7 @@ import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Experience from "./components/Experience";
 import Personal from "./components/Personal";
+import Concept from "./components/Concept";
 
 // const API_URL = process.env.REACT_APP_API_URL;
 const API_URL = "https://res-gw-4tszy005.ew.gateway.dev/index";
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/" element={<Profile />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/concept" element={<Concept />} />
           <Route path="/architecture" element={<Architecture />} />
           <Route
             path="/personal"

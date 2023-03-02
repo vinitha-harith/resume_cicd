@@ -7,6 +7,7 @@ import { ReactComponent as Logo } from "../images/Logo.svg";
 const navigation = [
   { name: "Profile", href: "/Profile" },
   { name: "Professional Experience", href: "/Experience" },
+  { name: "Site Concept", href: "/Concept" },
   { name: "Site Architecture", href: "/Architecture" },
 ];
 
