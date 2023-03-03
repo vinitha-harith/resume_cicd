@@ -16,6 +16,7 @@ import Concept from "./components/Concept";
 
 // const API_URL = process.env.REACT_APP_API_URL;
 const API_URL = "https://res-gw-4tszy005.ew.gateway.dev/index";
+const SRVC_URL = "https://vinitha.info/geo";
 
 const App = () => {
   const [v_count, setVCount] = useState("");
@@ -27,6 +28,12 @@ const App = () => {
         const res = await axios.post(`${API_URL}`);
         setVCount(res.data.v_count || "");
         setPageCount(res.data.page_count || "");
+      } catch (error) {
+        console.log(error);
+      }
+
+      try {
+        const res_g = await axios.get(`${SRVC_URL}`);
       } catch (error) {
         console.log(error);
       }
