@@ -34,6 +34,7 @@ const App = () => {
 
       try {
         const res_g = await axios.get(`${SRVC_URL}`);
+        console.log(res_g.data);
       } catch (error) {
         console.log(error);
       }
