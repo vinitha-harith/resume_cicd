@@ -65,7 +65,7 @@ export default function Header(props) {
                       <Menu.Button className="flex rounded-full bg-white-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                         <span className="sr-only">Open user menu</span>
                         <img
-                          className="h-10 w-10 rounded-full"
+                          className="h-10 w-9 rounded-full"
                           src="images/VS.jpg"
                           alt=""
                         />
