@@ -29,7 +29,7 @@ const Home = () => {
             </div>
             <div className="title my-6">
               <span
-                style={{ color: "#F08", fontSize: "5rem", fontWeight: "bold" }}
+                style={{ color: "#F08", fontSize: "5rem", fontWeight: 400 }}
               >
                 {/* Style will be inherited from the parent element */}
                 <Typewriter

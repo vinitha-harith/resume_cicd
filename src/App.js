@@ -3,10 +3,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./index.css";
 import "./App.css";
-
 // import "materialize-css/dist/css/materialize.min.css";
 // import "materialize-css/dist/js/materialize.min.js";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Architecture from "./components/Architecture";
 import Profile from "./components/Profile";
 import Header from "./components/Header";
@@ -57,6 +56,7 @@ const App = () => {
             path="/personal"
             element={<Personal v_count={v_count} page_count={page_count} />}
           />
+          <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </Header>
     </BrowserRouter>
