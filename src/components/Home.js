@@ -47,14 +47,19 @@ const Home = () => {
           you!
         </h2>
         <h3 className="my-4">
-          <Button
-            variant="outline-dark"
-            href={"/experience"}
-            size="lg"
-            style={{ fontWeight: "bold", color: "#F08" }}
+          <NavLink
+            className="no-underline display-6"
+            style={{ color: "#80f" }}
+            to={"/experience"}
           >
-            Browse my Resume
-          </Button>
+            <Button
+              variant="outline-dark"
+              size="lg"
+              style={{ fontWeight: "bold", color: "#F08" }}
+            >
+              Browse my Resume
+            </Button>
+          </NavLink>
         </h3>
       </div>
     </>
