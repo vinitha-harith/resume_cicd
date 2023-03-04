@@ -9,7 +9,7 @@ let timelineElements = [
     date: "June 2021 - present",
     icon: "work",
     buttonLink: "https://www.credit-suisse.com",
-    skills: "Systems Architecture, Python",
+    skills: "Systems Architecture | Python",
     annotations: "Finally Big data architecture and Cloud!",
   },
   {
@@ -23,7 +23,7 @@ let timelineElements = [
     icon: "work",
     buttonLink: "https://www.bearingpoint.com",
     skills:
-      "Systems Architecture, Data modelling, Python, PL/SQL, Oracle, MSSQL, SAP Analytics Cloud, R",
+      "Systems Architecture | Data modelling | Python, PL/SQL | Oracle | MSSQL | SAP Analytics Cloud, R",
     annotations:
       "Medley of topics and technologies, ranging from data modelling, building BI dashboards to enabling automation with custom-built tools ",
   },
@@ -37,9 +37,9 @@ let timelineElements = [
     date: "April 2011 — June 2012",
     icon: "work",
     buttonLink: "https://www.credit-suisse.com",
-    skills: "PL/SQL, Oracle",
+    skills: "PL/SQL | Oracle",
     annotations:
-      "Onto Oracle DW, automation of source code repository migrations using VBA and shell scripting",
+      "Oracle DW, automation of source code repository migrations using VBA and shell scripting",
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ let timelineElements = [
     date: "July 2008 — December 2008",
     icon: "work",
     buttonLink: "https://www.credit-suisse.com",
-    skills: "PeopleSoft, PL/SQL, Oracle",
+    skills: "PeopleSoft | PL/SQL | Oracle",
     annotations:
       "Some more technical implementations in the ERP space. With this, finally done working with ERPs!",
   },
@@ -65,7 +65,7 @@ let timelineElements = [
     date: "June 2007 — July 2008",
     icon: "work",
     buttonLink: "https://www.hbk.com",
-    skills: "PeopleSoft, Javascript",
+    skills: "PeopleSoft | Javascript",
     annotations:
       "Came up with an innovative solution to the requirements given the limitations in the ERP functionalities offered out-of-the-box.",
   },
@@ -80,7 +80,7 @@ let timelineElements = [
     date: "May 2001 — April 2007",
     icon: "work",
     buttonLink: "https://www.cognizant.com",
-    skills: "PeopleSoft, PL/SQL, Oracle",
+    skills: "PeopleSoft | PL/SQL | Oracle",
     annotations:
       "Systems landscape transformation, migrations, process re-engineering were great learning experiences",
   },
@@ -94,7 +94,7 @@ let timelineElements = [
     date: "June 1999 — April 2001",
     icon: "work",
     buttonLink: "https://www.cognizant.com",
-    skills: "PeopleSoft, Oracle",
+    skills: "PeopleSoft | Oracle",
     annotations: "ERP technology was fairly cool back in the day!",
   },
 ];

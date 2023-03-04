@@ -1,5 +1,5 @@
 import React from "react";
-import VS from "../images/VS.jpg";
+import VS from "../images/VS_capri.jpg";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
@@ -11,14 +11,8 @@ const Personal = ({ v_count, page_count }) => {
         <h1 className="display-6">So, who am I and what's my story...?(!)</h1>
         <p className="lead mt-4">
           <div>
-            <img
-              src={VS}
-              alt="VS"
-              className="rounded mx-auto d-block"
-              style={{ maxWidth: "12rem", maxHeight: "16rem" }}
-            />
+            <img src={VS} alt="VS" className="rounded mx-auto d-block fluid" />
           </div>
-          <p className="mt-4 text-center fw-bold">Vinitha Sivaraman</p>
           <p className="mt-4">
             My professional journey began in Chennai, India, as a software
             developer in the ERP domain, which led me to move to the US for a

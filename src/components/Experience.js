@@ -9,23 +9,30 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   // let workIconStyles = { background: "#06D6A0" };
-  let workIconStyles = { background: "#F08" };
+  let workIconStyles = {
+    background: "#F08",
+    borderColor: "lightgray",
+    boxShadow:
+      "0 0 0 4px lightgray, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05)",
+  };
   let schoolIconStyles = { background: "#f9c74f" };
 
   return (
     <div>
-      <h1 className="title mt-2">
-        My journey so far... professionally speaking
-      </h1>
+      <h1 className="title mt-4">My professional journey so far...</h1>
       <figure class="text-center">
         <blockquote class="blockquote">
           <p className="text-muted">
-            -- from a (monolithic) ERP software developer to a{" "}
+            -- from an ERP software developer to a{" "}
             <cite title="AWS, GCP">super cool</cite> Cloud Architect!
           </p>
         </blockquote>
       </figure>
-      <VerticalTimeline layout={"1-column-left"} animate={true}>
+      <VerticalTimeline
+        layout={"1-column-left"}
+        lineColor={"lightgray"}
+        animate={true}
+      >
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
           let showButton =
@@ -36,6 +43,14 @@ const Experience = () => {
           return (
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "#f9f7fa",
+                color: "black",
+                borderTop: "3px solid #80f",
+              }}
+              contentArrowStyle={{
+                borderRight: "7px solid  #80f",
+              }}
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
             >
               <h5 className="vertical-timeline-element-title fw-bold">
@@ -49,7 +64,7 @@ const Experience = () => {
               </p>
               <p id="description">{element.description}</p>
               <p id="skills" className="small text-muted fst-italic mb-3">
-                Skills used: {element.skills}
+                {element.skills}
               </p>
               {showButton && (
                 <a
@@ -63,9 +78,6 @@ const Experience = () => {
                   {element.buttonText}
                 </a>
               )}
-              <figcaption className="blockquote-footer fst-italic mt-3">
-                {element.annotations}
-              </figcaption>
             </VerticalTimelineElement>
           );
         })}

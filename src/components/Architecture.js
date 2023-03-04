@@ -4,7 +4,7 @@ import Image from "react-bootstrap/Image";
 
 const Architecture = () => {
   return (
-    <div className="bg-light p-5 rounded-lg fluid m-3">
+    <div className="bg-light p-5 rounded-lg fluid mt-3">
       <h1 className="display-6">What's hapenning behind the scenes...</h1>
       <p className="lead mt-4">
         <p>Now, for the architecture</p>
