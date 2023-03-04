@@ -17,14 +17,14 @@ const Home = () => {
           </div>
           <div className="title my-6">
             <span
-              style={{ color: "#F08", fontSize: "6rem", fontWeight: "bold" }}
+              style={{ color: "#F08", fontSize: "5rem", fontWeight: "bold" }}
             >
               {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={["Solutions Architect", "Cloud Engineer", "Developer"]}
-                loop={10}
+                loop={15}
                 cursor
-                cursorStyle="|"
+                cursorStyle=" >"
                 cursorColor="#80f"
                 typeSpeed={70}
                 deleteSpeed={50}
