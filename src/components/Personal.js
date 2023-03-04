@@ -8,7 +8,7 @@ const Personal = ({ v_count, page_count }) => {
   return (
     <>
       <div className="bg-light p-5 rounded-lg m-3">
-        <h1 className="display-6">So, who am I and what's my story...?(!)</h1>
+        <h1 className="display-6">So, who am I and what's my story...?</h1>
         <p className="lead mt-4">
           <div>
             <img src={VS} alt="VS" className="rounded mx-auto d-block fluid" />
