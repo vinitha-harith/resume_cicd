@@ -1,6 +1,7 @@
 import React from "react";
 import timelineElements from "./timelineEl";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -23,8 +24,7 @@ const Experience = () => {
       <figure class="text-center">
         <blockquote class="blockquote">
           <p className="text-muted">
-            -- from an ERP software developer to a{" "}
-            <cite title="AWS, GCP">super cool</cite> Cloud Architect!
+            - from an ERP software developer to a Cloud Architect!
           </p>
         </blockquote>
       </figure>
@@ -63,9 +63,20 @@ const Experience = () => {
                 {element.date}
               </p>
               <p id="description">{element.description}</p>
-              <p id="skills" className="small text-muted fst-italic mb-3">
-                {element.skills}
-              </p>
+
+              {element.skills.map((s) => {
+                return (
+                  <Button
+                    className="badge rounded-pill text-bg-secondary mx-1"
+                    size="sm"
+                    style={{ fontWeight: 400, color: "#F08" }}
+                  >
+                    {s}
+                  </Button>
+                );
+              })}
+
+              <p className="mt-4"></p>
               {showButton && (
                 <a
                   className={`button ${

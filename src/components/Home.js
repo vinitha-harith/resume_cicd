@@ -46,7 +46,7 @@ const Home = () => {
             </div>
           </h1>
           <h2 className="my-5 display-6" style={{ color: "white" }}>
-            Happy to{" "}
+            Nice to{" "}
             <span
               style={{ color: "#80f", fontSize: "2rem", fontWeight: "bold" }}
             >
