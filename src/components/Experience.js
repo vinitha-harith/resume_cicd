@@ -1,12 +1,12 @@
 import React from "react";
 import timelineElements from "./timelineEl";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import BackToTop from "./BackToTop";
 
 const Experience = () => {
   // let workIconStyles = { background: "#06D6A0" };
@@ -64,15 +64,15 @@ const Experience = () => {
               </p>
               <p id="description">{element.description}</p>
 
-              {element.skills.map((s) => {
+              {element.skills.map((skill) => {
                 return (
-                  <Button
+                  <span
                     className="badge rounded-pill text-bg-secondary mx-1"
                     size="sm"
                     style={{ fontWeight: 400, color: "#F08" }}
                   >
-                    {s}
-                  </Button>
+                    {skill}
+                  </span>
                 );
               })}
 
@@ -93,6 +93,7 @@ const Experience = () => {
           );
         })}
       </VerticalTimeline>
+      <BackToTop />
     </div>
   );
 };

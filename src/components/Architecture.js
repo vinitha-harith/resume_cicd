@@ -1,6 +1,7 @@
 import React from "react";
 import Arch from "../images/architecture.jpg";
 import Image from "react-bootstrap/Image";
+import BackToTop from "./BackToTop";
 
 const Architecture = () => {
   return (
@@ -14,6 +15,7 @@ const Architecture = () => {
           className="rounded mx-auto d-block mt-4 fluid"
         />
       </p>
+      <BackToTop />
     </div>
   );
 };

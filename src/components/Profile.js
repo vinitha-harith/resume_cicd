@@ -6,6 +6,7 @@ import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import BackToTop from "./BackToTop";
 
 const Profile = () => {
   function ContextAwareToggle({ children, eventKey, callback }) {
@@ -150,6 +151,7 @@ const Profile = () => {
           </Accordion.Collapse>
         </Card>
       </Accordion>
+      <BackToTop />
     </div>
   );
 };
