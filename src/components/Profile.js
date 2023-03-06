@@ -86,7 +86,7 @@ const Profile = () => {
             <Card.Body>
               <p>
                 Requirements Engineering | Systems Architecture | API Design |
-                Data Modelling | Data Analytics
+                Data Modelling | Data Analytics | Data Science
               </p>
             </Card.Body>
           </Accordion.Collapse>

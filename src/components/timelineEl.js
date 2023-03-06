@@ -25,19 +25,21 @@ let timelineElements = [
     title: "Business Advisor at BearingPoint AG",
     location: "Zurich, Switzerland",
     description:
-      "Data modelling/Integration, BI/Data Analytics, ETL, DWH, Reporting & Dashboard design projects. Delivered several projects for international (re)insurance companies completing business analysis and requirements engineering, specifically in the Regulatory Risk and Compliance area.",
+      "Focus areas were Data Modelling / Integration, BI/Data Analytics, ETL, DWH, Reporting & Dashboard design projects. Delivered several projects for international (re)insurance companies completing business analysis and requirements engineering, specifically in the Regulatory Risk and Compliance area.",
     buttonText: "BearingPoint",
     date: "August 2012 — April 2021",
     icon: "work",
     buttonLink: "https://www.bearingpoint.com",
     skills: [
       "Systems Architecture",
-      "Data modelling",
+      "Data Modelling",
       "Python",
       "PL/SQL",
       "Oracle",
       "MSSQL",
       "SAP Analytics Cloud",
+      "Power BI",
+      "Data Analytics",
       "R",
     ],
     skills_t:

@@ -1,6 +1,8 @@
 import React from "react";
 import Arch from "../images/architecture.jpg";
+import Geo from "../images/geo_profile.jpg";
 import Image from "react-bootstrap/Image";
+import Card from "react-bootstrap/Card";
 import BackToTop from "./BackToTop";
 
 const Architecture = () => {
@@ -19,9 +21,9 @@ const Architecture = () => {
           understanding of the various tools and technologies.
         </p>
         <p className="lead mt-4">
-          I've incorporated a number of the Cloud Architecture principles like
-          High Availability, Serverless, decoupled services, analytics,
-          automation... to name a few.
+          A number of Cloud Architecture principles, like High Availability,
+          Serverless, decoupled services, analytics, automation etc., have been
+          incorporated in the design of this website.
         </p>
         <p className="lead mt-4 fw-bold">The architecture</p>
 
@@ -30,6 +32,78 @@ const Architecture = () => {
           alt="architecture"
           className="rounded mx-auto d-block mt-4 fluid"
         />
+
+        <Card border="light">
+          <Card.Header className="fw-bold">Static Website</Card.Header>
+          <Card.Body>
+            <Card.Title>Frontend UI</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Card.Title>Network Services</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card border="light">
+          <Card.Header className="fw-bold">Backend</Card.Header>
+          <Card.Body>
+            <Card.Title>API Gateway</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Card.Title>Cloud Run</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card border="light">
+          <Card.Header className="fw-bold">Automation</Card.Header>
+          <Card.Body>
+            <Card.Title>Infrastructure-as-Code</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Card.Title>CI / CD</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card border="light">
+          <Card.Header className="fw-bold">Messaging</Card.Header>
+          <Card.Body>
+            <Card.Title>Infrastructure-as-Code</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card border="light">
+          <Card.Header className="fw-bold">Analytics</Card.Header>
+          <Card.Body>
+            <Card.Title>Geographical profile of visitors</Card.Title>
+            <Image
+              src={Geo}
+              alt="Geo Profile"
+              className="rounded mx-auto d-block mt-4 fluid"
+            />
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
         <BackToTop />
       </div>
     </>

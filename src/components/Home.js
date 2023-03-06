@@ -39,7 +39,7 @@ const Home = () => {
                   cursorStyle=" />"
                   cursorColor="#80f"
                   typeSpeed={100}
-                  deleteSpeed={100}
+                  deleteSpeed={120}
                   delaySpeed={1500}
                 />
               </span>
