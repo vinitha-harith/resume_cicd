@@ -38,9 +38,9 @@ const Home = () => {
                   cursor
                   cursorStyle=" />"
                   cursorColor="#80f"
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
+                  typeSpeed={100}
+                  deleteSpeed={100}
+                  delaySpeed={1500}
                 />
               </span>
             </div>

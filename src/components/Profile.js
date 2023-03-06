@@ -65,27 +65,29 @@ const Profile = () => {
         <Card>
           <Card.Header>
             <ContextAwareToggle eventKey="0">
-              Technical Skills
+              Tool and Technologies
             </ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <p>
-                Cloud Computing (AWS, GCP) | Python | PL / SQL | Javascript |
-                React | HTML | CSS | Oracle | MSSQL | SAP Analytics Cloud | R
+                Cloud Computing (AWS, GCP) | Python | PL/SQL | Javascript |
+                React | HTML | CSS | Oracle | MSSQL | Terraform | Docker | Unix
+                | SAP Analytics Cloud | Git | Power BI | R
               </p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
         <Card>
           <Card.Header>
-            <ContextAwareToggle eventKey="0">
-              Functional Skills
-            </ContextAwareToggle>
+            <ContextAwareToggle eventKey="0">Skills</ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
-              <p>Requirements Engineering | Systems Architecture</p>
+              <p>
+                Requirements Engineering | Systems Architecture | API Design |
+                Data Modelling | Data Analytics
+              </p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>

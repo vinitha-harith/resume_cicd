@@ -7,7 +7,12 @@ import { NavLink } from "react-router-dom";
 import BackToTop from "./BackToTop";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-// import Contact from "./Contact";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const CF_URL =
+  "https://us-central1-resume-ch.cloudfunctions.net/visitors_msg_cf";
 
 const Personal = ({ v_count, page_count }) => {
   // begin modal
@@ -19,17 +24,38 @@ const Personal = ({ v_count, page_count }) => {
     setVmessage("");
   };
   const handleShow = () => setShow(true);
-
+  const config = {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
   const [vname, setVname] = useState("");
   const [vemail, setVemail] = useState("");
   const [vmessage, setVmessage] = useState("");
 
-  const sendMsg = (e) => {
+  async function sendMsg(e) {
     e.preventDefault();
-    const msg = { vname, vemail, vmessage };
+    const msg = { vname: vname, vemail: vemail, vmessage: vmessage };
     console.log(msg);
+    try {
+      toast.info("Sending Message... please wait");
+      const res_cf = await axios.post(`${CF_URL}`, msg, config);
+      toast.success("Message sent successfully!");
+      console.log(res_cf.data);
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message);
+    }
     handleClose();
-  };
+  }
+
+  // const sendMsg = (e) => {
+  //   e.preventDefault();
+  //   const msg = { vname, vemail, vmessage };
+  //   console.log(msg);
+
+  //   handleClose();
+  // };
 
   // end modal
 
@@ -158,6 +184,7 @@ const Personal = ({ v_count, page_count }) => {
         </Alert>
         <p className="lead mt-4">Thanks for stopping by!</p>
         <BackToTop />
+        <ToastContainer position="top-right" />
       </div>
     </>
   );

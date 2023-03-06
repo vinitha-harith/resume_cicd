@@ -23,7 +23,8 @@ const Experience = () => {
       <h1 className="title mt-4">My professional journey so far...</h1>
 
       <h5 className="text-center text-muted fst-italic">
-        - from an ERP software developer to a Cloud Architect!
+        - from application development on monolithic systems to architecting
+        distributed systems on the Cloud!
       </h5>
 
       <VerticalTimeline
