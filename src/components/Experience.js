@@ -21,19 +21,17 @@ const Experience = () => {
   return (
     <div>
       <h1 className="title mt-4">My professional journey so far...</h1>
-      <figure class="text-center">
-        <blockquote class="blockquote">
-          <p className="text-muted">
-            - from an ERP software developer to a Cloud Architect!
-          </p>
-        </blockquote>
-      </figure>
+
+      <h5 className="text-center text-muted fst-italic">
+        - from an ERP software developer to a Cloud Architect!
+      </h5>
+
       <VerticalTimeline
         layout={"1-column-left"}
         lineColor={"lightgray"}
         animate={true}
       >
-        {timelineElements.map((element) => {
+        {timelineElements.map((element, j) => {
           let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&
@@ -43,6 +41,7 @@ const Experience = () => {
           return (
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              key={j}
               contentStyle={{
                 background: "#f9f7fa",
                 color: "black",
@@ -64,11 +63,12 @@ const Experience = () => {
               </p>
               <p id="description">{element.description}</p>
 
-              {element.skills.map((skill) => {
+              {element.skills.map((skill, i) => {
                 return (
                   <span
                     className="badge rounded-pill text-bg-secondary mx-1"
                     size="sm"
+                    key={i}
                     style={{ fontWeight: 400, color: "#F08" }}
                   >
                     {skill}
