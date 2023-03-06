@@ -90,26 +90,6 @@ const Personal = ({ v_count, page_count }) => {
           how I can help take your business to the next level.
         </p>
 
-        <Alert variant="dark" className="mt-4">
-          <span className="fw-bold">Impressions</span>
-          <div>
-            <NavLink to={"/architecture"}>
-              <Button variant="dark" className="mt-2 me-3">
-                Visitors <Badge bg="secondary">{v_count}</Badge>
-                <span className="visually-hidden">unread messages</span>
-              </Button>
-            </NavLink>
-            <NavLink to={"/architecture"}>
-              <Button variant="dark" className="mt-2">
-                Page Visits <Badge bg="secondary">{page_count}</Badge>
-                <span className="visually-hidden">unread messages</span>
-              </Button>
-            </NavLink>
-          </div>
-        </Alert>
-        <p className="lead mt-4">Thanks for stopping by!</p>
-        <BackToTop />
-
         <Button variant="primary" onClick={handleShow}>
           Contact me
         </Button>
@@ -159,6 +139,25 @@ const Personal = ({ v_count, page_count }) => {
             </Button>
           </Modal.Footer>
         </Modal>
+        <Alert variant="dark" className="mt-4">
+          <span className="fw-bold">Impressions</span>
+          <div>
+            <NavLink to={"/architecture"}>
+              <Button variant="dark" className="mt-2 me-3">
+                Visitors <Badge bg="secondary">{v_count}</Badge>
+                <span className="visually-hidden">unread messages</span>
+              </Button>
+            </NavLink>
+            <NavLink to={"/architecture"}>
+              <Button variant="dark" className="mt-2">
+                Page Visits <Badge bg="secondary">{page_count}</Badge>
+                <span className="visually-hidden">unread messages</span>
+              </Button>
+            </NavLink>
+          </div>
+        </Alert>
+        <p className="lead mt-4">Thanks for stopping by!</p>
+        <BackToTop />
       </div>
     </>
   );
