@@ -45,8 +45,8 @@ const Profile = () => {
         designing, developing, and delivering complex applications within
         Financial Services - Banking and Insurance, Government and Manufacturing
         sectors. Collaborative and result-oriented professional with a proven
-        track record of delivering customer success and working with diverse
-        global teams.
+        track record of delivering customer success, working with diverse global
+        teams.
       </p>
 
       <div className="social-media-icon">
@@ -65,15 +65,16 @@ const Profile = () => {
         <Card>
           <Card.Header>
             <ContextAwareToggle eventKey="0">
-              Tool and Technologies
+              Tools and Technologies
             </ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <p>
                 Cloud Computing (AWS, GCP) | Python | PL/SQL | Javascript |
-                React | HTML | CSS | Oracle | MSSQL | Terraform | Docker | Unix
-                | SAP Analytics Cloud | Git | Power BI | R
+                React | HTML | CSS | Oracle | MSSQL | Flask | Terraform | Docker
+                | Unix | SAP Analytics Cloud | Git | GitHub Actions | Power BI |
+                R
               </p>
             </Card.Body>
           </Accordion.Collapse>

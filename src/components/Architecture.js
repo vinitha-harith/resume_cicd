@@ -21,9 +21,9 @@ const Architecture = () => {
           understanding of the various tools and technologies.
         </p>
         <p className="lead mt-4">
-          A number of Cloud Architecture principles, like High Availability,
-          Serverless, decoupled services, analytics, automation etc., have been
-          incorporated in the design of this website.
+          I have been incorporated a good number of native Cloud Architecture
+          principles, like High Availability, Serverless, decoupled services,
+          analytics, automation, SRE etc., in the design of this website.
         </p>
         <p className="lead mt-4 fw-bold">The architecture</p>
 
