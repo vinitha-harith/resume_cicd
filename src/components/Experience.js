@@ -94,6 +94,9 @@ const Experience = () => {
           );
         })}
       </VerticalTimeline>
+      <p className="lead mt-4 fw-bold fst-italic">
+        ** Detailed CV & References available upon request
+      </p>
       <BackToTop />
     </div>
   );

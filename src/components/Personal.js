@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import VS from "../images/VS_capri.jpg";
+import LinkedIn from "../images/linkedin.svg";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
@@ -10,6 +11,7 @@ import Modal from "react-bootstrap/Modal";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import validator from "validator";
 
 const CF_URL =
   "https://us-central1-resume-ch.cloudfunctions.net/visitors_msg_cf";
@@ -37,16 +39,20 @@ const Personal = ({ v_count, page_count }) => {
     e.preventDefault();
     const msg = { vname: vname, vemail: vemail, vmessage: vmessage };
     console.log(msg);
-    try {
-      toast.info("Sending Message... please wait");
-      const res_cf = await axios.post(`${CF_URL}`, msg, config);
-      toast.success("Message sent successfully!");
-      console.log(res_cf.data);
-    } catch (error) {
-      console.log(error);
-      toast.error(error.message);
+    if (!validator.isEmail(vemail)) {
+      toast.error("Please enter a valid email address");
+    } else {
+      try {
+        toast.info("Sending Message... please wait");
+        const res_cf = await axios.post(`${CF_URL}`, msg, config);
+        toast.success("Message sent successfully!");
+        console.log(res_cf.data);
+      } catch (error) {
+        console.log(error);
+        toast.error(error.message);
+      }
+      handleClose();
     }
-    handleClose();
   }
 
   // const sendMsg = (e) => {
@@ -165,6 +171,15 @@ const Personal = ({ v_count, page_count }) => {
             </Button>
           </Modal.Footer>
         </Modal>
+        <div className="mt-3">
+          <a
+            href="http://www.linkedin.com/in/vinithasivaraman"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={LinkedIn} className="h-7 w-7" alt="" />
+          </a>
+        </div>
         <Alert variant="dark" className="mt-4">
           <span className="fw-bold">Impressions</span>
           <div>
