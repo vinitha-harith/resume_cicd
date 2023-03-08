@@ -69,7 +69,7 @@ let timelineElements = [
     title: "Senior IT Consultant at Credit Suisse",
     location: "Zurich, Switzerland",
     description:
-      "Performed development/integration activities, implemented automation with workflow solutions on the HRIS and Payroll transformation project using PeopleSoft ERP System.",
+      "Performed development/integration activities, implemented automation with workflow solutions as part of the HRIS and Payroll transformation project using PeopleSoft ERP System.",
     buttonText: "Credit Suisse",
     date: "July 2008 — December 2008",
     icon: "work",
@@ -100,7 +100,7 @@ let timelineElements = [
       "ERP Principal Technical Consultant at Cognizant Corp, (Clients: City of Lakeland, Florida, IndyMac Bank, MetLife, Credit Suisse AG)",
     location: "New York, USA and Zurich, Switzerland",
     description:
-      "Implementated ERP solutions, performed software development activities on Payroll transformation projects, including workflow re-engineering. Led the functional and technical Implementation of PeopleSoft HCM and Financial applications for several clients as part of HRIS/Payroll transformation projects. Responsible for technical development, business requirements analysis, issue resolution and project coordination of offshore development team, adopting the Waterfall SDLC methodology.",
+      "Implementated ERP solutions, performed software development activities on Payroll transformation projects, including workflow re-engineering. Led the functional and technical Implementation of PeopleSoft HCM and Financial applications for several clients as part of HRIS/Payroll transformation projects. Responsible for technical development, business requirements analysis, issue resolution and coordination of offshore development team activities, adopting the Waterfall SDLC methodology.",
     buttonText: "Cognizant",
     date: "May 2001 — April 2007",
     icon: "work",
