@@ -4,7 +4,7 @@ let timelineElements = [
     title: "IT Architect, Vice President at Credit Suisse AG",
     location: "Zurich, Switzerland",
     description:
-      "Design of strategic distributed systems integration architectural patterns within the Risk and Compliance division for second line of defense applications, integrating Big Data ecosystems such as Palantir Foundry, leveraging TOGAF framework and Agile methodologies and coordinate approvals from architecture authority boards.",
+      "Designed strategic distributed systems integration architectural patterns within the Risk and Compliance division for second line of defense applications, integrating Big Data ecosystems such as Palantir Foundry, leveraging TOGAF framework and Agile methodologies and coordinate approvals from architecture authority boards.",
     buttonText: "Credit Suisse",
     date: "June 2021 - present",
     icon: "work",
@@ -25,7 +25,7 @@ let timelineElements = [
     title: "Business Advisor at BearingPoint AG",
     location: "Zurich, Switzerland",
     description:
-      "Focus areas were Data Modelling / Integration, BI/Data Analytics, ETL, DWH, Reporting & Dashboard design projects. Delivered several projects for international (re)insurance companies completing business analysis and requirements engineering, specifically in the Regulatory Risk and Compliance area.",
+      "Delivered Data Modelling solutions, incorporating DWH design, performed data integration, ETL activities, built BI/Data Analytics and Reporting Dashboard for several clients. Implemented software solutions at major international (re)insurance companies, conducting business analysis and requirements engineering workshops, specifically in the Regulatory Risk and Compliance area.",
     buttonText: "BearingPoint",
     date: "August 2012 — April 2021",
     icon: "work",
@@ -52,7 +52,7 @@ let timelineElements = [
     title: "Senior IT Consultant at Credit Suisse Asset Management",
     location: "Zurich, Switzerland",
     description:
-      "Configuration Management, including planning and managing baselines and support application development/integration activities",
+      "Supported application development/integration activities, Configuration Management, including planning and managing baselines.",
     buttonText: "Credit Suisse",
     date: "April 2011 — June 2012",
     icon: "work",
@@ -67,7 +67,7 @@ let timelineElements = [
     title: "Senior IT Consultant at Credit Suisse",
     location: "Zurich, Switzerland",
     description:
-      "PeopleSoft ERP Application development/integration activities on the HRIS transformation project",
+      "Performed development/integration activities, implemented automation with workflow solutions on the HRIS and Payroll transformation project using PeopleSoft ERP System.",
     buttonText: "Credit Suisse",
     date: "July 2008 — December 2008",
     icon: "work",
@@ -98,7 +98,7 @@ let timelineElements = [
       "ERP Principal Technical Consultant at Cognizant Corp, (Clients: City of Lakeland, Florida, IndyMac Bank, MetLife, Credit Suisse AG)",
     location: "New York, USA and Zurich, Switzerland",
     description:
-      "ERP Implementations, Payroll transformation projects and workflow re-engineering. Led the functional and technical Implementation of PeopleSoft HCM and Financial applications for several clients as part of HRIS/Payroll transformation projects. Responsible for technical development, business requirements analysis, issue resolution and project coordination of offshore development team, adopting the Waterfall SDLC methodology.",
+      "Implementated ERP solutions, performed software development activities on Payroll transformation projects, including workflow re-engineering. Led the functional and technical Implementation of PeopleSoft HCM and Financial applications for several clients as part of HRIS/Payroll transformation projects. Responsible for technical development, business requirements analysis, issue resolution and project coordination of offshore development team, adopting the Waterfall SDLC methodology.",
     buttonText: "Cognizant",
     date: "May 2001 — April 2007",
     icon: "work",

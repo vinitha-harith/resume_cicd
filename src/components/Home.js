@@ -67,7 +67,7 @@ const Home = () => {
               to={"/experience"}
             >
               <Button
-                variant="outline-secondary"
+                variant="outline-light"
                 size="lg"
                 style={{ fontWeight: "bold", color: "#F08" }}
               >
