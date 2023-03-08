@@ -51,7 +51,7 @@ const Profile = () => {
 
       <div className="social-media-icon">
         <a
-          href="http://www.linkedin.com/in/vinithasivaraman"
+          href="https://www.linkedin.com/in/vinithasivaraman"
           target="_blank"
           rel="noopener noreferrer"
         >

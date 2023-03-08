@@ -23,7 +23,7 @@ const Experience = () => {
       <h1 className="title mt-4">My professional journey so far...</h1>
 
       <h5 className="text-center text-muted fst-italic">
-        - from application development on monolithic systems to architecting
+        ... from application development on monolithic systems to architecting
         distributed systems on the Cloud!
       </h5>
 
@@ -94,7 +94,7 @@ const Experience = () => {
           );
         })}
       </VerticalTimeline>
-      <p className="lead mt-4 fw-bold fst-italic">
+      <p className="lead mt-4 fw-bold text-muted fst-italic">
         ** Detailed CV & References available upon request
       </p>
       <BackToTop />

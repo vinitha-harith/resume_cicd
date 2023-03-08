@@ -76,9 +76,16 @@ const Personal = ({ v_count, page_count }) => {
         <p className="lead mt-4">
           Hi, I'm Vinitha, a driven and passionate software engineer and cloud
           architect. Born and brought up in the South Indian city of Chennai,
-          with a Bachelor's degree in Electrical and Electronics at the
-          prestigious Birla Institute of Technology and Science, Pilani I set
-          out to conquer the world of technology back in the early 2000’s.
+          with a Bachelor's degree in{" "}
+          <span className="fst-italic">
+            Electrical and Electronics Engineering{" "}
+          </span>
+          at the prestigious{" "}
+          <span className="fst-italic">
+            Birla Institute of Technology and Science, Pilani
+          </span>
+          , I set out to conquer the world of technology back in the early
+          2000’s.
         </p>
         <p className="lead mt-4">
           My career journey began as a software developer in the ERP domain,
@@ -173,11 +180,12 @@ const Personal = ({ v_count, page_count }) => {
         </Modal>
         <div className="mt-3">
           <a
-            href="http://www.linkedin.com/in/vinithasivaraman"
+            className="btn btn-primary"
+            href="https://www.linkedin.com/in/vinithasivaraman"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={LinkedIn} className="h-7 w-7" alt="" />
+            <img src={LinkedIn} className="h-5 w-5" alt="" />
           </a>
         </div>
         <Alert variant="dark" className="mt-4">
