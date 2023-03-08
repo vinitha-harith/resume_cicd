@@ -57,7 +57,7 @@ const Architecture = () => {
                   <Popover id="gcs">
                     <Popover.Header as="h5">
                       <a
-                        href="https://cloud.google.com/storage/docs/discover-object-storage-console"
+                        href="https://cloud.google.com/storage/docs/buckets"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -75,7 +75,36 @@ const Architecture = () => {
                   Google Cloud Storage (GCS)
                 </button>
               </OverlayTrigger>
-              bucket and cached via CDN to improve latency.
+              bucket and cached via
+              <OverlayTrigger
+                trigger="click"
+                rootClose
+                key="cdn"
+                placement="right"
+                overlay={
+                  <Popover id="cdn">
+                    <Popover.Header as="h5">
+                      <a
+                        href="https://cloud.google.com/cdn/docs/overview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Content Delivery Network (CDN)
+                      </a>
+                    </Popover.Header>
+                    <Popover.Body>
+                      Cloud CDN (Content Delivery Network) uses Google's global
+                      edge network to serve content closer to users, which
+                      accelerates serving websites and applications.
+                    </Popover.Body>
+                  </Popover>
+                }
+              >
+                <button type="button" className="btn btn-link btn-sm">
+                  Content Delivery Network (CDN)
+                </button>
+              </OverlayTrigger>
+              to improve latency.
             </Card.Text>
             <Card.Title className="text-muted">Network Services</Card.Title>
             <Card.Text>
@@ -109,11 +138,39 @@ const Architecture = () => {
                 </button>
               </OverlayTrigger>
               receives the client requests and routes them to the GCS bucket,
-              following the DNS name resolution by the DNS Service. The CDN is
-              configured to serve static cached content. The Load Balancer
-              allows for custom header configuration, and this helps with
-              collecting metrics regarding the visitor traffic (shown in the
-              Analytics section below.)
+              following the DNS name resolution by the
+              <OverlayTrigger
+                trigger="click"
+                rootClose
+                key="dns"
+                placement="right"
+                overlay={
+                  <Popover id="dns">
+                    <Popover.Header as="h5">
+                      <a
+                        href="https://cloud.google.com/dns/docs/overview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Cloud DNS Service
+                      </a>
+                    </Popover.Header>
+                    <Popover.Body>
+                      Cloud DNS is a high-performance, resilient, global Domain
+                      Name System (DNS) service that publishes your domain names
+                      to the global DNS in a cost-effective way.
+                    </Popover.Body>
+                  </Popover>
+                }
+              >
+                <button type="button" className="btn btn-link btn-sm">
+                  Cloud DNS Service.
+                </button>
+              </OverlayTrigger>
+              The CDN is configured to serve static cached content. The Load
+              Balancer allows for custom header configuration, and this helps
+              with collecting metrics regarding the visitor traffic (shown in
+              the Analytics section below.)
             </Card.Text>
             <Card.Title className="text-muted">Message Queuing</Card.Title>
             <Card.Text>
@@ -361,8 +418,9 @@ const Architecture = () => {
             </Card.Title>
             <Card.Text>
               The deployment of some of the resources, such as, the GCS, API
-              Gateway, LB, Google Artifact Registry is automated using Terraform
-              and the infrastruction provisioned using GitHub Actions.
+              Gateway, Load Balancer, Google Artifact Registry is automated
+              using Terraform and the infrastruction provisioned using GitHub
+              Actions.
             </Card.Text>
             <Card.Title className="text-muted">CI / CD</Card.Title>
             <Card.Text>
