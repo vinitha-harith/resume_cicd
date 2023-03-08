@@ -20,7 +20,7 @@ const Experience = () => {
 
   return (
     <div>
-      <h1 className="title mt-4">My professional journey so far...</h1>
+      <h1 className="title mt-4">My professional journey so far ...</h1>
 
       <h5 className="text-center text-muted fst-italic">
         ... from application development on monolithic systems to architecting

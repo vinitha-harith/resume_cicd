@@ -74,7 +74,7 @@ const Profile = () => {
                 Cloud Computing (AWS, GCP) | Python | PL/SQL | Javascript |
                 React | HTML | CSS | Oracle | MSSQL | Flask | Terraform | Docker
                 | Unix | SAP Analytics Cloud | Git | GitHub Actions | Power BI |
-                R
+                PUML | R
               </p>
             </Card.Body>
           </Accordion.Collapse>
@@ -86,8 +86,9 @@ const Profile = () => {
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <p>
-                Requirements Engineering | Systems Architecture | API Design |
-                Data Modelling | Data Analytics | Data Science
+                Requirements Engineering | Systems Architecture | Business
+                Architecture | API Design | Data Modelling | Data Analytics |
+                Data Science | TOGAF | UML
               </p>
             </Card.Body>
           </Accordion.Collapse>

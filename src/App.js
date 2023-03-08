@@ -33,14 +33,15 @@ const App = () => {
           const res = await axios.post(`${API_URL}`);
           setVCount(res.data.v_count || "");
           setPageCount(res.data.page_count || "");
-          console.log(res.data);
+          // console.log(res.data);
         } catch (error) {
           console.log(error);
         }
 
         try {
+          // eslint-disable-next-line no-unused-vars
           const res_g = await axios.get(`${SRVC_URL}`);
-          console.log(res_g.data);
+          // console.log(res_g.data);
         } catch (error) {
           console.log(error);
         }
