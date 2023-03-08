@@ -98,7 +98,7 @@ const Personal = ({ v_count, page_count }) => {
         <p className="lead mt-4">
           As technology continued to evolve, keen to stay ahead of the curve, I
           worked over weekends and late evenings to obtain additional technical
-          certifications, on Cloud Architecture, Big Data Analytics, and Data
+          certifications on Cloud Architecture, Big Data Analytics, and Data
           Science. Since then, I've continued to upskill myself in the latest
           technologies and constantly seek out new challenges, looking for ways
           to improve and push myself to the next level.
@@ -117,11 +117,8 @@ const Personal = ({ v_count, page_count }) => {
         </p>
         <p className="lead mt-3">
           My strong technical skills, desire to constantly improve, and passion
-          for innovation make me the perfect candidate for any software
-          engineering or cloud architect role. I'm always looking for new
-          challenges and opportunities to make a positive impact, so if you're
-          looking for a driven and talented professional, let's connect and see
-          how I can help take your business to the next level.
+          for innovation make me an ideal candidate for any solutions architect
+          or cloud engineer role.
         </p>
 
         <Button variant="primary" onClick={handleShow}>

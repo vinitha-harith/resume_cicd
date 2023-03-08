@@ -25,9 +25,9 @@ const Architecture = () => {
         </p>
         <p className="lead mt-4">
           I have incorporated a good number of native Cloud Architecture
-          principles, such as ensuring high availability, serverless, scalable,
-          decoupled services, analytics, automation, security, SRE etc., into
-          the design of this website.
+          principles, such as ensuring high availability, serverless,
+          scalability, decoupled services, analytics, automation, security, SRE
+          etc., into the design of this website.
         </p>
         <p className="lead mt-4 fw-bold">The Architecture</p>
 
@@ -536,7 +536,37 @@ const Architecture = () => {
                 </button>
               </OverlayTrigger>
               Dataset Table from GCS. This table is then used for dashboard
-              visualizations via Looker Studio, as shown below{" "}
+              visualizations via
+              <OverlayTrigger
+                trigger="click"
+                rootClose
+                key="ls"
+                placement="right"
+                overlay={
+                  <Popover id="ls">
+                    <Popover.Header as="h5">
+                      <a
+                        href="https://cloud.google.com/looker-studio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Looker Studio
+                      </a>
+                    </Popover.Header>
+                    <Popover.Body>
+                      Looker Studio is a free tool that turns your data into
+                      informative, easy to read, easy to share, and fully
+                      customizable dashboards and reports from a wide variety of
+                      sources, driving smarter business decisions.
+                    </Popover.Body>
+                  </Popover>
+                }
+              >
+                <button type="button" className="btn btn-link btn-sm">
+                  Looker Studio
+                </button>
+              </OverlayTrigger>
+              as shown below{" "}
               <span className="fst-italic">(not a live feed!)</span>.
             </Card.Text>
             <Card.Title className="text-muted">

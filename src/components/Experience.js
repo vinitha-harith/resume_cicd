@@ -56,7 +56,7 @@ const Experience = () => {
               <h5 className="vertical-timeline-element-title fw-bold">
                 {element.title}
               </h5>
-              <h6 className="vertical-timeline-element-subtitle fst-italic">
+              <h6 className="vertical-timeline-element-subtitle fst-italic mt-1">
                 {element.location}
               </h6>
               <p id="date" className="text-muted">
