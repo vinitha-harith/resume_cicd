@@ -89,30 +89,25 @@ const Personal = ({ v_count, page_count }) => {
         </p>
         <p className="lead mt-4">
           My career journey began as a software developer in the ERP domain,
-          which led me to move to the US for a brief two-year stint. After some
-          initial experience implementing payroll and other ERP solutions to a
-          couple of major US banks and insurance companies, an exciting
-          opportunity as an ERP developer at a Swiss bank which was too good to
-          pass up, came about and this brought me to Zurich, Switzerland, which
-          I now call my (second) home.
+          which led me to move to the US for a couple of years. After some
+          initial experience implementing payroll and other ERP solutions at
+          major US banks and insurance companies, an exciting opportunity as an
+          ERP developer at a Swiss bank came about and this brought me to
+          Zurich, Switzerland, which I now call my (second) home.
         </p>
         <p className="lead mt-4">
-          As technology continued to evolve, I knew that I needed to stay ahead
-          of the curve. Cloud, Big Data Analytics, and Data Science became the
-          new buzzwords, and I jumped on the opportunity to build up BI
-          dashboards on SAP Analytics Cloud platform. Since then, I've continued
-          to upskill myself in the latest technologies and seek out new
-          challenges.
+          As technology continued to evolve, keen to stay ahead of the curve, I
+          worked over weekends and late evenings to obtain additional technical
+          certifications, on Cloud Architecture, Big Data Analytics, and Data
+          Science. Since then, I've continued to upskill myself in the latest
+          technologies and constantly seek out new challenges, looking for ways
+          to improve and push myself to the next level.
         </p>
         <p className="lead mt-3">
-          Through trial and error, I learned the importance of showcasing
-          metrics to potential employers. I never underestimated the
-          significance of quantifying my past project experiences again. In
-          fact, I collect stats on everything I do, including on this site,
-          where I use a couple of counters to gauge its popularity, and more
-          metrics are being collected, analysed, and visualized behind the
-          scenes! I'm always looking for ways to improve and push myself to the
-          next level.
+          Given the significance of quantification and metrics collection, I've
+          implemented a couple of counters (under 'Impressions') to gauge this
+          site's reach, with some visualizations behind the scenes to understand
+          the geographical profile of visitors!
         </p>
         <p className="lead mt-3">
           When I'm not working, I enjoy spending time with my family, traveling,

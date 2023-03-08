@@ -19,13 +19,13 @@ const Architecture = () => {
         <p className="lead mt-4">
           The purpose behind building this site was to showcase some of my
           technical capabilities and expertise in cloud architecture. Rather
-          than utilize readily available web-templates I choose to build much of
-          the site in a ground-up way to both enhance my skills and build
+          than utilize readily available web-templates, I chose to build much of
+          the site in a ground-up way to both enhance my skills and improve my
           understanding of the various tools and technologies.
         </p>
         <p className="lead mt-4">
           I have incorporated a good number of native Cloud Architecture
-          principles, such as ensuring High Availability, Serverless, scalable,
+          principles, such as ensuring high availability, serverless, scalable,
           decoupled services, analytics, automation, security, SRE etc., into
           the design of this website.
         </p>
@@ -424,13 +424,41 @@ const Architecture = () => {
             </Card.Text>
             <Card.Title className="text-muted">CI / CD</Card.Title>
             <Card.Text>
-              Local IDE with Cloud Code SDK is used for development of the
-              frontend and backend services and all changes are version
-              controlled using git and synced with a GitHub repository. Using
-              GitHub actions, the deployment to Cloud Run using Docker images,
-              gets triggered based on pushing the code to GitHub. The build and
-              deployment of the frontend application code to GCS is also
-              automated.
+              Local IDE with
+              <OverlayTrigger
+                trigger="click"
+                rootClose
+                key="cc"
+                placement="right"
+                overlay={
+                  <Popover id="cc">
+                    <Popover.Header as="h5">
+                      <a
+                        href="https://cloud.google.com/code/docs/vscode/how-to"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Cloud Code
+                      </a>
+                    </Popover.Header>
+                    <Popover.Body>
+                      Cloud Code is a set of IDE plugins for popular IDEs that
+                      make it easier to create, deploy and integrate
+                      applications with Google Cloud.
+                    </Popover.Body>
+                  </Popover>
+                }
+              >
+                <button type="button" className="btn btn-link btn-sm">
+                  Cloud Code
+                </button>
+              </OverlayTrigger>
+              SDK is used for development of the frontend and backend services
+              and all changes are version controlled using git and synced with a
+              GitHub repository. Using GitHub actions, the deployment to Cloud
+              Run using Docker images, gets triggered based on pushing the code
+              to GitHub. The build and deployment of the frontend application
+              code to GCS is also automated.
             </Card.Text>
             <Card.Title className="text-muted">Security</Card.Title>
             <Card.Text>
