@@ -28,8 +28,8 @@ const Personal = ({ v_count, page_count }) => {
   const handleShow = () => setShow(true);
   const config = {
     headers: {
-      "Content-Type": "application/json",
-    },
+      "Content-Type": "application/json"
+    }
   };
   const [vname, setVname] = useState("");
   const [vemail, setVemail] = useState("");
@@ -67,7 +67,7 @@ const Personal = ({ v_count, page_count }) => {
 
   return (
     <>
-      <div className="bg-light p-5 rounded-lg m-3">
+      <div className="bg-light p-5 rounded-lg mt-2">
         <h1 className="display-6">So, who am I and what's my story...?</h1>
         <div>
           <img src={VS} alt="VS" className="rounded mx-auto d-block fluid" />

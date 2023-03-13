@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
+import "../custom.css";
 
 const BackToTop = () => {
   const [backToTop, setBackToTop] = useState(false);
@@ -18,7 +19,7 @@ const BackToTop = () => {
   const scrollUp = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   };
 
@@ -26,6 +27,7 @@ const BackToTop = () => {
     <div className="App">
       {backToTop && (
         <Button
+          variant="dark"
           style={{
             position: "fixed",
             bottom: "40px",
@@ -33,7 +35,7 @@ const BackToTop = () => {
             height: "40px",
             width: "40px",
             fontSize: "25px",
-            textAlign: "center",
+            textAlign: "center"
           }}
           onClick={scrollUp}
         >

@@ -8,9 +8,9 @@ const navigation = [
   { name: "Vinitha Sivaraman", href: "/Home" },
   { name: "Profile", href: "/Profile" },
   { name: "Professional Experience", href: "/Experience" },
-  // { name: "Site Concept", href: "/Concept" },
   { name: "Site Architecture", href: "/Architecture" },
-  { name: "About Me", href: "/Personal" },
+  //  { name: "Location", href: "/Location" },
+  { name: "About Me", href: "/Personal" }
 ];
 
 // function classNames(...classes) {

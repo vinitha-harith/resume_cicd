@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Arch from "../images/architecture.jpg";
 import Geo from "../images/geo_profile.jpg";
 import Image from "react-bootstrap/Image";
@@ -7,11 +7,21 @@ import { NavLink } from "react-router-dom";
 import BackToTop from "./BackToTop";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Location from "./Location";
+import "../custom.css";
 
-const Architecture = () => {
+const Architecture = ({ geoData }) => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => {
+    setShow(false);
+  };
+  const handleShow = () => setShow(true);
+
   return (
     <>
-      <div className="bg-light p-5 rounded-lg fluid mt-3">
+      <div className="bg-light p-5 rounded-lg fluid mt-2">
         <h1 className="display-6">What's hapenning behind the scenes...</h1>
         <p className="lead mt-4 fw-bold">
           The Concept - Rationale behind hosting this site
@@ -577,6 +587,14 @@ const Architecture = () => {
               alt="Geo Profile"
               className="rounded mx-auto d-block mt-2 fluid"
             />
+            <Button
+              variant="dark"
+              onClick={handleShow}
+              className="mt-2"
+              style={{ backgroundColor: "#80f", color: "white" }}
+            >
+              Geo Stats LIVE
+            </Button>
             <Card.Text className="mt-2">
               Some other simple stats collected and processed can be seen{" "}
               <NavLink
@@ -635,6 +653,28 @@ const Architecture = () => {
           </Card>
         </Card>
 
+        <Modal
+          className="modal-dialog modal-xl"
+          show={show}
+          onHide={handleClose}
+          height="80vh"
+          width="100%"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>
+              Geographical profile of visitors{" "}
+              <span className="fst-italic">(Live feed)</span>
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Location geoData={geoData} />
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
         <BackToTop />
       </div>
     </>

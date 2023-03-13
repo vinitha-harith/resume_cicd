@@ -27,7 +27,7 @@ const Profile = () => {
           style={{
             backgroundColor: isCurrentEventKey ? "#f08" : "gray",
             color: isCurrentEventKey ? "white" : "white",
-            fontWeight: "bold",
+            fontWeight: "bold"
           }}
           onClick={decoratedOnClick}
         >
@@ -38,7 +38,7 @@ const Profile = () => {
   }
 
   return (
-    <div className="bg-light p-5 rounded-lg m-3">
+    <div className="bg-light p-5 rounded-lg mt-2">
       <h1 className="display-6">Professional Summary</h1>
       <p className="lead mt-4">
         Experienced Solutions Architect with a diverse technical background in

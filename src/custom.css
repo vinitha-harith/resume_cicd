@@ -10,3 +10,22 @@
   background-color: #f08;
   color: white;
 }
+
+.leaflet-container {
+  height: 80vh;
+  width: 100%;
+}
+
+.cluster-icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #f08;
+  color: white;
+  transform: translate(25%, 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+}

@@ -121,3 +121,16 @@ ul.square {
 .social-media-icon a {
   font-size: 2rem;
 }
+
+.btn-primary {
+  background-color: #80f;
+  border: #80f;
+  font-weight: normal;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #f08;
+  --bs-btn-hover-border-color: #f08;
+}
+.btn-primary:hover {
+  background-color: #f08;
+  color: white;
+}
