@@ -654,7 +654,7 @@ const Architecture = ({ geoData }) => {
         </Card>
 
         <Modal
-          className="modal-dialog modal-xl"
+          className="modal-dialog modal-xl modal-dialog-scrollable"
           show={show}
           onHide={handleClose}
           height="80vh"
@@ -662,8 +662,8 @@ const Architecture = ({ geoData }) => {
         >
           <Modal.Header closeButton>
             <Modal.Title>
-              Geographical profile of visitors{" "}
-              <span className="fst-italic">(Live feed)</span>
+              Geographical reach
+              <span className="fst-italic"> (Live feed)</span>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>

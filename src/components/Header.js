@@ -43,12 +43,21 @@ export default function Header(props) {
                         <NavLink
                           key={item.name}
                           to={item.href}
+                          style={{
+                            color:
+                              item.name === "Vinitha Sivaraman"
+                                ? "#f08"
+                                : "white"
+                          }}
                           className={({ isActive }) => {
                             return (
                               "px-3 py-2 rounded-md text-sm font-bold no-underline " +
                               (!isActive
                                 ? " text-gray-300 hover:bg-gray-700 hover:text-white"
-                                : "bg-gray-900 text-white")
+                                : "bg-gray-900 text-white") +
+                              (!isActive && item.name !== "Vinitha Sivaraman"
+                                ? " text-gray-300 hover:bg-gray-700 hover:text-white"
+                                : "bg-gray-900")
                             );
                           }}
                         >
