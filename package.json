@@ -21,6 +21,7 @@
     "materialize-css": "^1.0.0-rc.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
+    "react-card-flip": "^1.2.0",
     "react-dom": "^18.2.0",
     "react-iframe": "^1.8.5",
     "react-leaflet": "^4.2.1",

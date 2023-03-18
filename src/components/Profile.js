@@ -7,6 +7,12 @@ import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import BackToTop from "./BackToTop";
+import CertCard from "./CertCard";
+import certs from "./certData";
+import Bits_pilani from "../images/bits.png";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Profile = () => {
   function ContextAwareToggle({ children, eventKey, callback }) {
@@ -27,7 +33,7 @@ const Profile = () => {
           style={{
             backgroundColor: isCurrentEventKey ? "#f08" : "gray",
             color: isCurrentEventKey ? "white" : "white",
-            fontWeight: "bold"
+            fontWeight: "bold",
           }}
           onClick={decoratedOnClick}
         >
@@ -99,13 +105,32 @@ const Profile = () => {
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
-              <p className="fw-bold">
-                B.E. (Hons.) Electrical and Electronics Engineering,{" "}
-                <span className="fst-italic">
-                  Birla Institute of Technology and Science, Pilani, India{" "}
-                </span>
-              </p>
-              <p className="mt-3">August 1995 — May 1999</p>
+              <Container fluid>
+                <Row>
+                  <Col xs={2}>
+                    <a
+                      href="https://www.bits-pilani.ac.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={Bits_pilani}
+                        className="mx-auto d-block img-fluid"
+                        alt=""
+                      />
+                    </a>
+                  </Col>
+                  <Col>
+                    <p className="fw-bold">
+                      B.E. (Hons.) Electrical and Electronics Engineering,{" "}
+                      <span className="fst-italic">
+                        Birla Institute of Technology and Science, Pilani, India{" "}
+                      </span>
+                    </p>
+                    <p className="mt-3">August 1995 — May 1999</p>
+                  </Col>
+                </Row>
+              </Container>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -141,6 +166,18 @@ const Profile = () => {
                   Certifications, <span className="fst-italic"> Harvardx</span>
                 </li>
               </ul>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  flexFlow: "wrap",
+                  justifyContent: "center",
+                }}
+              >
+                {certs.map((c, index) => (
+                  <CertCard key={c.id} cert={c} />
+                ))}
+              </div>
             </Card.Body>
           </Accordion.Collapse>
         </Card>

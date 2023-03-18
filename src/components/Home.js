@@ -23,13 +23,13 @@ const Home = () => {
           <h1 className="title">
             <div
               className="title my-4"
-              style={{ color: "white", fontSize: "7rem", fontWeight: "400" }}
+              style={{ color: "white", fontSize: "6rem", fontWeight: "400" }}
             >
               Hello there! I'm Vinitha.
             </div>
             <div className="title my-6">
               <span
-                style={{ color: "#F08", fontSize: "5rem", fontWeight: 400 }}
+                style={{ color: "#F08", fontSize: "4rem", fontWeight: 400 }}
               >
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
