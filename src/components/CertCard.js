@@ -8,8 +8,9 @@ const CardStyle = {
   margin: "20px",
   width: "250px",
   height: "250px",
-  boxShadow:
-    "0 0 0 4px lightgray, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05)",
+  borderStyle: "solid",
+  boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+  cursor: "pointer",
 };
 
 const CertCard = ({ cert }) => {
