@@ -61,7 +61,10 @@ const Profile = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          ></FontAwesomeIcon>
         </a>
       </div>
 
@@ -69,7 +72,9 @@ const Profile = () => {
 
       <Accordion defaultActiveKey="0">
         <Card>
-          <Card.Header>
+          <Card.Header
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
             <ContextAwareToggle eventKey="0">
               Tools and Technologies
             </ContextAwareToggle>
@@ -86,7 +91,9 @@ const Profile = () => {
           </Accordion.Collapse>
         </Card>
         <Card>
-          <Card.Header>
+          <Card.Header
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
             <ContextAwareToggle eventKey="0">Skills</ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
@@ -100,7 +107,9 @@ const Profile = () => {
           </Accordion.Collapse>
         </Card>
         <Card>
-          <Card.Header>
+          <Card.Header
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
             <ContextAwareToggle eventKey="0">Education</ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
@@ -135,7 +144,9 @@ const Profile = () => {
           </Accordion.Collapse>
         </Card>
         <Card>
-          <Card.Header>
+          <Card.Header
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
             <ContextAwareToggle eventKey="0">Certifications</ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
@@ -182,7 +193,9 @@ const Profile = () => {
           </Accordion.Collapse>
         </Card>
         <Card>
-          <Card.Header>
+          <Card.Header
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
             <ContextAwareToggle eventKey="0">Languages</ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">

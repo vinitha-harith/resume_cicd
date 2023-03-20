@@ -28,8 +28,8 @@ const Personal = ({ v_count, page_count }) => {
   const handleShow = () => setShow(true);
   const config = {
     headers: {
-      "Content-Type": "application/json"
-    }
+      "Content-Type": "application/json",
+    },
   };
   const [vname, setVname] = useState("");
   const [vemail, setVemail] = useState("");
@@ -121,7 +121,11 @@ const Personal = ({ v_count, page_count }) => {
           or cloud engineer role.
         </p>
 
-        <Button variant="primary" onClick={handleShow}>
+        <Button
+          variant="primary"
+          onClick={handleShow}
+          style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+        >
           Contact me
         </Button>
         <Modal show={show} onHide={handleClose}>
@@ -173,6 +177,7 @@ const Personal = ({ v_count, page_count }) => {
         <div className="mt-3">
           <a
             className="btn btn-primary"
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
             href="https://www.linkedin.com/in/vinithasivaraman"
             target="_blank"
             rel="noopener noreferrer"
@@ -180,18 +185,42 @@ const Personal = ({ v_count, page_count }) => {
             <img src={LinkedIn} className="h-5 w-5" alt="" />
           </a>
         </div>
-        <Alert variant="dark" className="mt-4">
+        <Alert
+          variant="dark"
+          className="mt-4"
+          style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+        >
           <span className="fw-bold">Impressions</span>
           <div>
             <NavLink to={"/architecture"}>
-              <Button variant="dark" className="mt-2 me-3">
-                Visitors <Badge bg="secondary">{v_count}</Badge>
+              <Button
+                variant="dark"
+                className="mt-2 me-3"
+                style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+              >
+                Visitors{" "}
+                <Badge
+                  bg="secondary"
+                  style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+                >
+                  {v_count}
+                </Badge>
                 <span className="visually-hidden">unread messages</span>
               </Button>
             </NavLink>
             <NavLink to={"/architecture"}>
-              <Button variant="dark" className="mt-2">
-                Page Visits <Badge bg="secondary">{page_count}</Badge>
+              <Button
+                variant="dark"
+                className="mt-2"
+                style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+              >
+                Page Visits{" "}
+                <Badge
+                  bg="secondary"
+                  style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+                >
+                  {page_count}
+                </Badge>
                 <span className="visually-hidden">unread messages</span>
               </Button>
             </NavLink>

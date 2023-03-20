@@ -23,7 +23,13 @@ const Architecture = ({ geoData }) => {
     <>
       <div className="bg-light p-5 rounded-lg fluid mt-2">
         <h1 className="display-6">What's hapenning behind the scenes...</h1>
-        <p className="lead mt-4 fw-bold">
+        <p
+          className="lead mt-4 fw-bold"
+          style={{
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            padding: "0.5em 0.5em 0.5em 0.5em",
+          }}
+        >
           The Concept - Rationale behind hosting this site
         </p>
         <p className="lead mt-4">
@@ -39,16 +45,28 @@ const Architecture = ({ geoData }) => {
           scalability, decoupled services, analytics, automation, security, SRE
           etc., into the design of this website.
         </p>
-        <p className="lead mt-4 fw-bold">The Architecture</p>
+        <p
+          className="lead mt-4 fw-bold"
+          style={{
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            padding: "0.5em 0.5em 0.5em 0.5em",
+          }}
+        >
+          The Architecture
+        </p>
 
         <Image
           src={Arch}
           alt="architecture"
           className="rounded mx-auto d-block mt-4 fluid"
+          style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
         />
 
-        <Card border="light">
-          <Card.Header className="lead fw-bold">
+        <Card border="light" className="mt-2">
+          <Card.Header
+            className="lead fw-bold"
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
             Static Website Hosting
           </Card.Header>
           <Card.Body>
@@ -251,7 +269,12 @@ const Architecture = ({ geoData }) => {
           </Card.Body>
         </Card>
         <Card border="light">
-          <Card.Header className="lead fw-bold">Backend</Card.Header>
+          <Card.Header
+            className="lead fw-bold"
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
+            Backend
+          </Card.Header>
           <Card.Body>
             <Card.Title className="text-muted">Cloud Run</Card.Title>
             <Card.Text>
@@ -421,7 +444,12 @@ const Architecture = ({ geoData }) => {
           </Card.Body>
         </Card>
         <Card border="light">
-          <Card.Header className="lead fw-bold">Automation</Card.Header>
+          <Card.Header
+            className="lead fw-bold"
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
+            Automation
+          </Card.Header>
           <Card.Body>
             <Card.Title className="text-muted">
               Infrastructure-as-Code
@@ -509,7 +537,12 @@ const Architecture = ({ geoData }) => {
           </Card.Body>
         </Card>
         <Card border="light">
-          <Card.Header className="lead fw-bold">Analytics</Card.Header>
+          <Card.Header
+            className="lead fw-bold"
+            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          >
+            Analytics
+          </Card.Header>
           <Card.Body>
             <Card.Title className="text-muted">
               Datastore to BigQuery data export
@@ -591,7 +624,12 @@ const Architecture = ({ geoData }) => {
               variant="dark"
               onClick={handleShow}
               className="mt-2"
-              style={{ backgroundColor: "#80f", color: "white" }}
+              style={{
+                backgroundColor: "#80f",
+                borderColor: "#80f",
+                color: "white",
+                boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              }}
             >
               Geo Stats LIVE
             </Button>
@@ -608,7 +646,10 @@ const Architecture = ({ geoData }) => {
             </Card.Text>
           </Card.Body>
           <Card border="light">
-            <Card.Header className="lead fw-bold">
+            <Card.Header
+              className="lead fw-bold"
+              style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+            >
               Site Reliability Engineering
             </Card.Header>
             <Card.Body>

@@ -69,7 +69,11 @@ const Home = () => {
               <Button
                 variant="outline-light"
                 size="lg"
-                style={{ fontWeight: "bold", color: "#F08" }}
+                style={{
+                  fontWeight: "bold",
+                  color: "#F08",
+                  boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                }}
               >
                 Browse my Resume
               </Button>
