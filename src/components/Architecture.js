@@ -40,10 +40,12 @@ const Architecture = ({ geoData }) => {
           etc., into the design of this website.
         </p>
         <p
-          className="lead mt-4 fw-bold"
+          className="lead mt-4"
           style={{
             boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
             padding: "0.5em 0.5em 0.5em 0.5em",
+            background: "gray",
+            color: "white",
           }}
         >
           Architecture
@@ -58,8 +60,12 @@ const Architecture = ({ geoData }) => {
 
         <Card border="light" className="mt-2">
           <Card.Header
-            className="lead fw-bold"
-            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+            className="lead"
+            style={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              background: "gray",
+              color: "white",
+            }}
           >
             Static Website Hosting
           </Card.Header>
@@ -264,8 +270,12 @@ const Architecture = ({ geoData }) => {
         </Card>
         <Card border="light">
           <Card.Header
-            className="lead fw-bold"
-            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+            className="lead"
+            style={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              background: "gray",
+              color: "white",
+            }}
           >
             Backend
           </Card.Header>
@@ -439,8 +449,12 @@ const Architecture = ({ geoData }) => {
         </Card>
         <Card border="light">
           <Card.Header
-            className="lead fw-bold"
-            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+            className="lead"
+            style={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              background: "gray",
+              color: "white",
+            }}
           >
             Automation
           </Card.Header>
@@ -532,8 +546,12 @@ const Architecture = ({ geoData }) => {
         </Card>
         <Card border="light">
           <Card.Header
-            className="lead fw-bold"
-            style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+            className="lead"
+            style={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              background: "gray",
+              color: "white",
+            }}
           >
             Analytics
           </Card.Header>
@@ -641,8 +659,12 @@ const Architecture = ({ geoData }) => {
           </Card.Body>
           <Card border="light">
             <Card.Header
-              className="lead fw-bold"
-              style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+              className="lead"
+              style={{
+                boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                background: "gray",
+                color: "white",
+              }}
             >
               Site Reliability Engineering
             </Card.Header>
