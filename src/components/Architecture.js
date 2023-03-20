@@ -23,13 +23,7 @@ const Architecture = ({ geoData }) => {
     <>
       <div className="bg-light p-5 rounded-lg fluid mt-2">
         <h1 className="display-6">What's hapenning behind the scenes...</h1>
-        <p
-          className="lead mt-4 fw-bold"
-          style={{
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "0.5em 0.5em 0.5em 0.5em",
-          }}
-        >
+        <p className="lead mt-4 fw-bold">
           The Concept - Rationale behind hosting this site
         </p>
         <p className="lead mt-4">
