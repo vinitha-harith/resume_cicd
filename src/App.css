@@ -77,11 +77,13 @@ h3 {
 
 .workButton {
   background-color: #80f;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .workButton:hover {
   background-color: #f08;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .schoolButton {

@@ -53,15 +53,25 @@ const Experience = () => {
               }}
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
             >
-              <h5 className="vertical-timeline-element-title fw-bold">
-                {element.title}
-              </h5>
-              <h6 className="vertical-timeline-element-subtitle fst-italic mt-1">
-                {element.location}
-              </h6>
+              <div
+                style={{
+                  background: "lightgray",
+                  padding: "0.5em 0.5em 0.5em 0.5em",
+                  borderStyle: "solid",
+                  boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                }}
+              >
+                <h5 className="vertical-timeline-element-title fw-bold">
+                  {element.title}
+                </h5>
+                <h6 className="vertical-timeline-element-subtitle fst-italic mt-1">
+                  {element.location}
+                </h6>
+              </div>
               <p id="date" className="text-muted">
                 {element.date}
               </p>
+
               <p id="description">{element.description}</p>
 
               {element.skills.map((skill, i) => {
