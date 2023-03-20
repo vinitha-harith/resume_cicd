@@ -24,7 +24,7 @@ const Architecture = ({ geoData }) => {
       <div className="bg-light p-5 rounded-lg fluid mt-2">
         <h1 className="display-6">What's hapenning behind the scenes...</h1>
         <p className="lead mt-4 fw-bold">
-          The Concept - Rationale behind hosting this site
+          Concept - Rationale behind hosting this site
         </p>
         <p className="lead mt-4">
           The purpose behind building this site was to showcase some of my
@@ -46,7 +46,7 @@ const Architecture = ({ geoData }) => {
             padding: "0.5em 0.5em 0.5em 0.5em",
           }}
         >
-          The Architecture
+          Architecture
         </p>
 
         <Image
