@@ -55,13 +55,14 @@ const Experience = () => {
             >
               <div
                 style={{
-                  background: "lightgray",
+                  background: "linear-gradient(#F08, #2c292e)",
+                  color: "white",
                   padding: "0.5em 0.5em 0.5em 0.5em",
                   borderStyle: "solid",
                   boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                 }}
               >
-                <h5 className="vertical-timeline-element-title fw-bold">
+                <h5 className="vertical-timeline-element-title">
                   {element.title}
                 </h5>
                 <h6 className="vertical-timeline-element-subtitle fst-italic mt-1">
