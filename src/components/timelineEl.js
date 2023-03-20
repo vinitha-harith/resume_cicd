@@ -19,7 +19,6 @@ let timelineElements = [
       "UML",
     ],
     skills_t: "Systems Architecture | Python",
-    annotations: "Finally Big data architecture and Cloud!",
   },
   {
     id: 2,
@@ -46,8 +45,6 @@ let timelineElements = [
     ],
     skills_t:
       "Systems Architecture | Data modelling | Python, PL/SQL | Oracle | MSSQL | SAP Analytics Cloud, R",
-    annotations:
-      "Medley of topics and technologies, ranging from data modelling, building BI dashboards to enabling automation with custom-built tools ",
   },
   {
     id: 3,
@@ -61,12 +58,10 @@ let timelineElements = [
     buttonLink: "https://www.credit-suisse.com",
     skills: ["PL/SQL", " Oracle"],
     skills_t: "PL/SQL | Oracle",
-    annotations:
-      "Oracle DW, automation of source code repository migrations using VBA and shell scripting",
   },
   {
     id: 4,
-    title: "Senior IT Consultant at Credit Suisse",
+    title: "Senior IT Consultant at Credit Suisse AG",
     location: "Zurich, Switzerland",
     description:
       "Performed development/integration activities, implemented automation with workflow solutions as part of the HRIS and Payroll transformation project using PeopleSoft ERP System.",
@@ -76,8 +71,6 @@ let timelineElements = [
     buttonLink: "https://www.credit-suisse.com",
     skills: ["PeopleSoft", "PL/SQL", "Oracle"],
     skills_t: "PeopleSoft | PL/SQL | Oracle",
-    annotations:
-      "Some more technical implementations in the ERP space. With this, finally done working with ERPs!",
   },
   {
     id: 5,
@@ -91,8 +84,6 @@ let timelineElements = [
     buttonLink: "https://www.hbk.com",
     skills: ["PeopleSoft", "Javascript"],
     skills_t: "PeopleSoft | Javascript",
-    annotations:
-      "Came up with an innovative solution to the requirements given the limitations in the ERP functionalities offered out-of-the-box.",
   },
   {
     id: 6,
@@ -107,8 +98,6 @@ let timelineElements = [
     buttonLink: "https://www.cognizant.com",
     skills: ["PeopleSoft", "PL/SQL", "Oracle"],
     skills_t: "PeopleSoft | PL/SQL | Oracle",
-    annotations:
-      "Systems landscape transformation, migrations, process re-engineering were great learning experiences",
   },
   {
     id: 7,
@@ -122,7 +111,6 @@ let timelineElements = [
     buttonLink: "https://www.cognizant.com",
     skills: ["PeopleSoft", "Oracle"],
     skills_t: "PeopleSoft | Oracle",
-    annotations: "ERP technology was fairly cool back in the day!",
   },
 ];
 

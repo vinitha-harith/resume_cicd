@@ -57,7 +57,7 @@ h3 {
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
     0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-  padding: 2em 3em !important;
+  padding: 2em 2em 2em 2em !important;
 }
 
 .date {
@@ -70,7 +70,7 @@ h3 {
 
 .button {
   text-decoration: none;
-  padding: 0.5em 1em;
+  padding: 0.5em;
   border-radius: 5px;
   color: white;
 }

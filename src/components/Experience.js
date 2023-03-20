@@ -81,7 +81,7 @@ const Experience = () => {
                     className="badge rounded-pill text-bg-secondary mx-1"
                     size="sm"
                     key={i}
-                    style={{ fontWeight: 400, color: "#F08" }}
+                    style={{ fontWeight: "normal", color: "white" }}
                   >
                     {skill}
                   </span>
