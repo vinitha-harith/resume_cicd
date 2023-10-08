@@ -17,11 +17,19 @@ const certs = [
   },
   {
     id: 3,
-    title: "Application Associate",
+    title: "Application Consultant",
     issuer: "SAP Analytics Cloud",
     link: "https://www.credly.com/badges/3929d79c-ded9-4640-8531-bad1ea19e911/public_url",
     imageId1: require("../images/sac.png"),
     imageId2: require("../images/sap_cert.png"),
+  },
+  {
+    id: 4,
+    title: "Artificial Intelligence with Python",
+    issuer: "Harvard (CS50)",
+    link: "https://certificates.cs50.io/66a220e4-8ffe-4833-8d74-bb6d228463fc.pdf?size=letter",
+    imageId1: require("../images/Harvard-Logo.png"),
+    imageId2: require("../images/CS50AI.png"),
   },
 ];
 

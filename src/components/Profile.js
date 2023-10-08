@@ -44,7 +44,7 @@ const Profile = () => {
   }
 
   return (
-    <div className="bg-light p-5 rounded-lg mt-2">
+    <div className="bg-white p-5 rounded-lg mt-2">
       <h1 className="display-6">Professional Summary</h1>
       <p className="lead mt-4">
         Experienced Solutions Architect with a diverse technical background in
@@ -82,10 +82,10 @@ const Profile = () => {
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <p>
-                Cloud Computing (AWS, GCP) | Python | PL/SQL | Javascript |
-                React | HTML | CSS | Oracle | MSSQL | Flask | Terraform | Docker
-                | Unix | SAP Analytics Cloud | Git | GitHub Actions | Power BI |
-                PUML | R
+                Cloud Computing (AWS, GCP) | Python | PySpark | PL/SQL |
+                Javascript | React | HTML | CSS | Oracle | MSSQL | Flask |
+                Terraform | Docker | Unix | SAP Analytics Cloud | Git | GitHub
+                Actions | Power BI | PUML | R
               </p>
             </Card.Body>
           </Accordion.Collapse>
@@ -159,6 +159,10 @@ const Profile = () => {
                 <li className="mt-3">
                   Associate Cloud Engineer - Google Cloud,{" "}
                   <span className="fst-italic"> Google</span>{" "}
+                </li>
+                <li className="mt-3">
+                  Artificial Intelligence with Python,{" "}
+                  <span className="fst-italic"> CS50, Harvard</span>
                 </li>
                 <li className="mt-3">
                   SAP Certified Application Associate, SAP Analytics Cloud

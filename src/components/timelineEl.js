@@ -1,12 +1,32 @@
 let timelineElements = [
   {
     id: 1,
+    title:
+      "Senior Business Analyst - Trade Settlements & Custody Services, Vice President at Credit Suisse AG",
+    location: "Zurich, Switzerland",
+    description:
+      "(i) Analysis and Documentation of the existing end-to-end Trade Settlement process for Brokerage & Custody Services. Created different stakeholder perspectives of the business process flow and of the applications involved, to support the impact assessment of the T+1 Settlement directive. (ii) Data Analysis to derive insights on the readiness to move to the T+1 Settlement Cycle in the US/CA markets. Programmed Python scripts for data analysis to understand the processing times, to analyse message traffic, settlement fails to evaluate the gaps to be addressed.",
+    buttonText: "Credit Suisse",
+    date: "May 2023 - present",
+    icon: "work",
+    buttonLink: "https://www.credit-suisse.com",
+    skills: [
+      "Business Architecture",
+      "Python",
+      "Requirements Engineering",
+      "PUML",
+      "UML",
+    ],
+    skills_t: "Systems Architecture | Python",
+  },
+  {
+    id: 1,
     title: "IT Architect, Vice President at Credit Suisse AG",
     location: "Zurich, Switzerland",
     description:
       "Designed strategic distributed systems integration architectural patterns within the Risk and Compliance division for second line of defense applications, integrating Big Data ecosystems such as Palantir Foundry, leveraging TOGAF framework and Agile methodologies and coordinate approvals from architecture authority boards.",
     buttonText: "Credit Suisse",
-    date: "June 2021 - present",
+    date: "June 2021 - April 2023",
     icon: "work",
     buttonLink: "https://www.credit-suisse.com",
     skills: [

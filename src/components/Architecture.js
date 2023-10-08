@@ -21,7 +21,7 @@ const Architecture = ({ geoData }) => {
 
   return (
     <>
-      <div className="bg-light p-5 rounded-lg fluid mt-2">
+      <div className="bg-white p-5 rounded-lg fluid mt-2">
         <h1 className="display-6">What's hapenning behind the scenes...</h1>
         <p className="lead mt-4 fw-bold">
           Concept - Rationale behind hosting this site
