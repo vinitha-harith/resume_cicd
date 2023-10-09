@@ -82,8 +82,9 @@ const Profile = () => {
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <p>
-                Cloud Computing (AWS, GCP) | Python | PySpark | PL/SQL |
-                Javascript | React | HTML | CSS | Oracle | MSSQL | Flask |
+                Cloud Computing (AWS, GCP) | Python | PySpark | PL/SQL | Cloud
+                Computing (AWS, GCP) | Python | PySpark | PL/SQL | Javascript |
+                React | HTML | CSS | Oracle | MSSQL | Databricks | Flask |
                 Terraform | Docker | Unix | SAP Analytics Cloud | Git | GitHub
                 Actions | Power BI | PUML | R
               </p>

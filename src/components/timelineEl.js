@@ -5,7 +5,7 @@ let timelineElements = [
       "Senior Business Analyst - Trade Settlements & Custody Services, Vice President at Credit Suisse AG",
     location: "Zurich, Switzerland",
     description:
-      "(i) Analysis and Documentation of the existing end-to-end Trade Settlement process for Brokerage & Custody Services. Created different stakeholder perspectives of the business process flow and of the applications involved, to support the impact assessment of the T+1 Settlement directive. (ii) Data Analysis to derive insights on the readiness to move to the T+1 Settlement Cycle in the US/CA markets. Programmed Python scripts for data analysis to understand the processing times, to analyse message traffic, settlement fails to evaluate the gaps to be addressed.",
+      "(i) Analysis and Documentation of the existing end-to-end Trade Settlement process for Brokerage & Custody Services. Created different stakeholder perspectives of the business process flow and of the applications involved, to support the impact assessment of the T+1 Settlement directive. (ii) Data Analysis to derive insights on the readiness to move to the T+1 Settlement Cycle in the US/CA markets. Programmed Python scripts for data analysis to evaluate the gaps to be addressed.",
     buttonText: "Credit Suisse",
     date: "May 2023 - present",
     icon: "work",

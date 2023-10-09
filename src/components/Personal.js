@@ -67,7 +67,7 @@ const Personal = ({ v_count, page_count }) => {
 
   return (
     <>
-      <div className="bg-light p-5 rounded-lg mt-2">
+      <div className="bg-white p-5 rounded-lg mt-2">
         <h1 className="display-6">So, who am I and what's my story...?</h1>
         <div>
           <img src={VS} alt="VS" className="rounded mx-auto d-block fluid" />
