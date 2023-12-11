@@ -41,22 +41,24 @@ const Location = ({ geoData }) => {
 
   const customIcon = new Icon({
     iconUrl: require("../images/marker.png"),
-    iconSize: [34, 34]
+    iconSize: [34, 34],
   });
 
   const createCustomClusterIcon = (cluster) => {
     return new divIcon({
       html: `<div class="cluster-icon">${cluster.getChildCount()}</div>`,
       className: "custom-marker-cluster",
-      iconSize: parseInt(33, 33, true)
+      iconSize: parseInt(33, 33, true),
     });
   };
   //console.log(geoData);
   return (
     <MapContainer center={[47.449512, 8.582165]} zoom={5}>
       <TileLayer
-        attribution="Stamen.TonerLite"
-        url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png"
+        // attribution="Stamen.TonerLite"
+        // url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <MarkerClusterGroup
         chunkedLoading
@@ -66,7 +68,7 @@ const Location = ({ geoData }) => {
           <Marker
             position={[
               parseFloat(marker.client_lat) || 47.449512,
-              parseFloat(marker.client_long) || 8.582165
+              parseFloat(marker.client_long) || 8.582165,
             ]}
             key={i}
             icon={customIcon}
