@@ -55,8 +55,10 @@ const Experience = () => {
             >
               <div
                 style={{
-                  background: "linear-gradient(#F08, #3c383d)",
-                  color: "white",
+                  // background: "linear-gradient(#F08, #3c383d)",
+                  background: "light-gray",
+                  //color: "white",
+                  color: "#80f",
                   padding: "0.5em 0.5em 0.5em 0.5em",
                   borderStyle: "solid",
                   boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",

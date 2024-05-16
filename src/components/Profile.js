@@ -154,12 +154,24 @@ const Profile = () => {
             <Card.Body>
               <ul className="square">
                 <li className="mt-3">
-                  AWS Solutions Architect - Associate Certification,
+                  AWS Solutions Architect - Associate,
                   <span className="fst-italic"> Amazon Web Services</span>
                 </li>
                 <li className="mt-3">
-                  Associate Cloud Engineer - Google Cloud,{" "}
-                  <span className="fst-italic"> Google</span>{" "}
+                  Professional Cloud Architect,{" "}
+                  <span className="fst-italic"> Google Cloud</span>{" "}
+                </li>
+                <li className="mt-3">
+                  Associate Cloud Engineer,{" "}
+                  <span className="fst-italic"> Google Cloud</span>{" "}
+                </li>
+                <li className="mt-3">
+                  Apache Spark Developer Associate,{" "}
+                  <span className="fst-italic"> Databricks</span>{" "}
+                </li>
+                <li className="mt-3">
+                  Data Engineer Associate,{" "}
+                  <span className="fst-italic"> Databricks</span>{" "}
                 </li>
                 <li className="mt-3">
                   Artificial Intelligence with Python,{" "}

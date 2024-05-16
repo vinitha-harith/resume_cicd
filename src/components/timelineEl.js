@@ -2,12 +2,31 @@ let timelineElements = [
   {
     id: 1,
     title:
-      "Senior Business Analyst - Trade Settlements & Custody Services, Vice President at Credit Suisse AG",
+      "Data Engineer - Data & Reporting - Wealth Management Platform at UBS",
+    location: "Zurich, Switzerland",
+    description:
+      "(i) Reporting Data Mart design and implementation. (ii) Building Data pipelines to source data into the analytics data warehouse.",
+    buttonText: "UBS",
+    date: "Feb 2024 - present",
+    icon: "work",
+    buttonLink: "https://www.ubs.com",
+    skills: [
+      "Dimension Modelling",
+      "Python",
+      "Requirements Engineering",
+      "SQL",
+    ],
+    skills_t: "Systems Architecture | Python",
+  },
+  {
+    id: 2,
+    title:
+      "Senior Technical Business Analyst - Trade Settlements & Custody Services, Vice President at Credit Suisse AG",
     location: "Zurich, Switzerland",
     description:
       "(i) Analysis and Documentation of the existing end-to-end Trade Settlement process for Brokerage & Custody Services. Created different stakeholder perspectives of the business process flow and of the applications involved, to support the impact assessment of the T+1 Settlement directive. (ii) Data Analysis to derive insights on the readiness to move to the T+1 Settlement Cycle in the US/CA markets. Programmed Python scripts for data analysis to evaluate the gaps to be addressed.",
     buttonText: "Credit Suisse",
-    date: "May 2023 - present",
+    date: "May 2023 - Jan 2024",
     icon: "work",
     buttonLink: "https://www.credit-suisse.com",
     skills: [
@@ -20,7 +39,7 @@ let timelineElements = [
     skills_t: "Systems Architecture | Python",
   },
   {
-    id: 1,
+    id: 3,
     title: "IT Architect, Vice President at Credit Suisse AG",
     location: "Zurich, Switzerland",
     description:
@@ -41,7 +60,7 @@ let timelineElements = [
     skills_t: "Systems Architecture | Python",
   },
   {
-    id: 2,
+    id: 4,
     title: "Business Advisor at BearingPoint AG",
     location: "Zurich, Switzerland",
     description:
@@ -67,7 +86,7 @@ let timelineElements = [
       "Systems Architecture | Data modelling | Python, PL/SQL | Oracle | MSSQL | SAP Analytics Cloud, R",
   },
   {
-    id: 3,
+    id: 5,
     title: "Senior IT Consultant at Credit Suisse Asset Management",
     location: "Zurich, Switzerland",
     description:
@@ -80,7 +99,7 @@ let timelineElements = [
     skills_t: "PL/SQL | Oracle",
   },
   {
-    id: 4,
+    id: 6,
     title: "Senior IT Consultant at Credit Suisse AG",
     location: "Zurich, Switzerland",
     description:
@@ -93,7 +112,7 @@ let timelineElements = [
     skills_t: "PeopleSoft | PL/SQL | Oracle",
   },
   {
-    id: 5,
+    id: 7,
     title: "ERP Senior Technical Consultant at HBK Investments, USA",
     location: "Zurich, Switzerland (Remote)",
     description:
@@ -106,7 +125,7 @@ let timelineElements = [
     skills_t: "PeopleSoft | Javascript",
   },
   {
-    id: 6,
+    id: 8,
     title:
       "ERP Principal Technical Consultant at Cognizant Corp, (Clients: City of Lakeland, Florida, IndyMac Bank, MetLife, Credit Suisse AG)",
     location: "New York, USA and Zurich, Switzerland",
@@ -120,7 +139,7 @@ let timelineElements = [
     skills_t: "PeopleSoft | PL/SQL | Oracle",
   },
   {
-    id: 7,
+    id: 9,
     title: "ERP Senior Developer at Cognizant Corp",
     location: "Chennai, India",
     description:
